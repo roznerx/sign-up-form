@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'nautica_3dregular';
+    src: url('font/nautica3d-webfont.woff2') format('woff2'),
+         url('font/nautica3d-webfont.woff') format('woff'),
+         url('font/nautica3d-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
