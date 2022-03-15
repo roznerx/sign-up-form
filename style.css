@@ -1,8 +1,164 @@
 @font-face {
-    font-family: 'nautica_3dregular';
-    src: url('font/nautica3d-webfont.woff2') format('woff2'),
-         url('font/nautica3d-webfont.woff') format('woff'),
-         url('font/nautica3d-webfont.ttf') format('truetype');
+    font-family: 'neon_80sregular';
+    src: 
+        url('font/neon-webfont.woff2') format('woff2'),
+        url('font/neon-webfont.woff') format('woff'),
+        url('font/neon-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+}
+
+:root {
+    --neon-red: #D63A3B;
+    --neon-blue: #084F83;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+html {
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-side {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/nuno-antunes-EvVaMewm2Gc-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#logo-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    width: auto;
+    top: 13em;
+    height: 5em;
+}
+
+#logo {
+    font-family: 'neon_80sregular';
+    color: #b9b9b9;
+    font-size: 3em;
+    position: relative;
+    text-align: center;
+    bottom: 45%;
+}
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: black;
+    min-width: 512px;
+    min-height: 768px;
+    height: 100vh;
+}
+
+#intro-text-container {
+    display: flex;
+    position: relative;
+    left: 5%;
+}
+
+#intro-text {
+    font-family: 'Arial', sans-serif;
+    color: #b9b9b9;
+    font-weight: 500;
+    font-size: 1.3em;
+    position: relative;
+    top: 10%;
+    line-height: 1.5;
+}
+
+red {
+    color: var(--neon-red);
+}
+
+blue {
+    color: var(--neon-blue);
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 5%;
+    left: 5%;
+}
+
+.form-section {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    margin-bottom: 5%;
+}
+
+.label-and-input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Arial', sans-serif;
+    color: #b9b9b9;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    margin-bottom: 3%;
+}
+
+input {
+    width: 20vw;
+    border: 1px groove #b9b9b9;
+    background-color: black;
+    color: #b9b9b9;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    height: 2em;
+}
+
+input:valid {
+    border: 1px groove var(--neon-blue);
+    outline: none;
+}
+
+input:invalid {
+    border: 1px groove var(--neon-red);
+    outline: none;
+}
+
+button {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--neon-red);
+    background-color: black;
+    border: 1px groove var(--neon-red);
+    border-radius: 5px;
+    padding: 10px 40px;
+    width: 15vw;
+    top: 3%;
+}
+
+button:hover {
+    background-color: var(--neon-red);
+    color: black;
 }

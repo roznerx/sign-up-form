@@ -8,8 +8,8 @@ Made by **roznerx** (ignaciorosner@gmail.com)
 
 ## Font credits:
 
-- *Nautica 3D* font by **Vladimir Nikolic** from Dafont.com [https://www.dafont.com/es/nautica-3d.font]
+- *Neon 80s* font by **Essqué Productions** from Dafont.com [https://www.dafont.com/es/neon-80s.font]
 
 ## Image credits:
 
-- *Lighthouse at Fort Worden on Puget Sound* by **Connor O'Keefe** [@okeefecj] from Unsplash.com [https://unsplash.com/photos/DQyg2PJF_-8]
+- *Editorial* by **Nuno Antunes** [@onun] from Unsplash.com [https://unsplash.com/photos/EvVaMewm2Gc]

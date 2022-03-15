@@ -8,6 +8,70 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    
+    <div id="left-side">
+        <div id="logo-container">
+            <p id="logo">Hello World</p>
+        </div>
+    </div>
+    <div id="right-side">
+        <div id="intro-text-container">
+            <p id="intro-text">This is not the <red>real</red> world. This is something you need. Something to make you <blue>feel</blue> better,<br>
+                like a perfect drug you cannot <red>escape</red> from, soothing you into a sweet and empty <blue>lie</blue>.<br>
+                <br>
+                What if I told you the only way to make your deepest <blue>dreams</blue> come <red>true</red> is to <em>wake up</em>?
+                <br>
+                <br>
+                Sign up now and I'll show <red>you</red> how deep the <b>rabbit hole</b> goes.<br>
+                <br>
+                You <i>know</i> you <blue>want</blue> to...</p>
+        </div>
+        <form>
+            <div class="form-section">
+                <div class="label-and-input">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="Thomas" minlength="3">
+                </div>
+                <div class="label-and-input">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Anderson" minlength="3">
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="label-and-input">
+                    <label for="user_email">EMAIL</label>
+                    <input type="email" id="user_email" name="email" placeholder="neo@theone.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+                <div class="label-and-input">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="text" id="phone_number" name="phone_number" placeholder="312-555-0690" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}$" 
+                        minlength="12" maxlength="12">
+                </div>
+            </div>
+            <div class="form-section">
+                <div class="label-and-input">
+                    <label for="user_password">PASSWORD</label>
+                    <input type="password" id="user_password" name="password" minlength="6"> 
+                </div>
+                <div class="label-and-input">
+                    <label for="user_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm_user_password" name="password" minlength="6"> 
+                </div> 
+            </div>
+            <button type="submit">Wake Up</button>
+        </form>
+    </div>
+    <script>
+        var password = document.getElementById("user_password");
+        confirm_password = document.getElementById("confirm_user_password");
+        function validatePassword() {
+            if(password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        } 
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
 </body>
 </html>
