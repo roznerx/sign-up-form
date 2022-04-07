@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="validation.js" async></script>
 </head>
 <body>
     <div id="left-side">
@@ -57,21 +58,8 @@
                     <input type="password" id="confirm_user_password" name="password" minlength="6"> 
                 </div> 
             </div>
-            <button type="submit">Wake Up</button>
+            <button id="submit-btn" type="submit">Wake Up</button>
         </form>
     </div>
-    <script>
-        var password = document.getElementById("user_password");
-        confirm_password = document.getElementById("confirm_user_password");
-        function validatePassword() {
-            if(password.value != confirm_password.value) {
-                confirm_password.setCustomValidity("Passwords Don't Match");
-            } else {
-                confirm_password.setCustomValidity('');
-            }
-        } 
-        password.onchange = validatePassword;
-        confirm_password.onkeyup = validatePassword;
-    </script>
 </body>
 </html>
